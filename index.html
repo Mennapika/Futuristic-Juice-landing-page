@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Futuristic Juice</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="logo">🍹</div>
+  <button class="hamburger">&#9776;</button>
+  <div class="nav-links">
+    <button>Home</button>
+    <button>Flavors</button>
+    <button>About</button>
+    <button>Shop</button>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="left">
+    <h1 id="title">Kiwi Juice</h1>
+    <p id="desc">A refreshing kiwi burst with energizing and revitalizing powers to start your day full of vitality.</p>
+  </div>
+
+  <div class="right" id="tiltArea">
+    <div class="circle" id="circle">
+      <img src="./images/kiwi.PNG" id="mainBottle">
+    </div>
+    
+    <!-- Glow Effects -->
+    <div class="glow glow1"></div>
+    <div class="glow glow2"></div>
+
+    <!-- Liquid shimmer overlay -->
+    <div class="liquid-overlay"></div>
+
+    <!-- Explosion container -->
+    <div id="explosionContainer"></div>
+
+    <div class="small-bottles">
+      <img src="./images/kiwi.PNG" class="active">
+      <img src="./images/orange.PNG">
+      <img src="./images/strawberry.PNG">
+      <img src="./images/berry2.PNG">
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
