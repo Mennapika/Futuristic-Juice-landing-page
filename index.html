@@ -1,55 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Futuristic Juice</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
 
-<nav>
-  <div class="logo">🍹</div>
-  <button class="hamburger">&#9776;</button>
-  <div class="nav-links">
-    <button>Home</button>
-    <button>Flavors</button>
-    <button>About</button>
-    <button>Shop</button>
-  </div>
+<!-- GLASS NAVBAR -->
+
+<nav class="navbar">
+
+<div class="logo">🍹 FreshJuice</div>
+
+<ul class="nav-links">
+
+<li><a href="#">Home</a></li>
+<li><a href="#">Flavors</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Contact</a></li>
+
+</ul>
+
+<div class="menu-btn">☰</div>
+
 </nav>
 
+
+<!-- MAIN -->
+
 <div class="container">
-  <div class="left">
-    <h1 id="title">Kiwi Juice</h1>
-    <p id="desc">A refreshing kiwi burst with energizing and revitalizing powers to start your day full of vitality.</p>
-  </div>
 
-  <div class="right" id="tiltArea">
-    <div class="circle" id="circle">
-      <img src="./images/kiwi.PNG" id="mainBottle">
-    </div>
-    
-    <!-- Glow Effects -->
-    <div class="glow glow1"></div>
-    <div class="glow glow2"></div>
+<div class="left">
 
-    <!-- Liquid shimmer overlay -->
-    <div class="liquid-overlay"></div>
+<h1 id="title">Kiwi Juice</h1>
 
-    <!-- Explosion container -->
-    <div id="explosionContainer"></div>
+<p id="description">
 
-    <div class="small-bottles">
-      <img src="./images/kiwi.PNG" class="active">
-      <img src="./images/orange.PNG">
-      <img src="./images/strawberry.PNG">
-      <img src="./images/berry2.PNG">
-    </div>
-  </div>
+A vibrant fusion of freshly crushed kiwi bursting with tropical freshness and energizing antioxidants.
+
+</p>
+
+<div class="flavors">
+
+<img src="images/kiwi-slice.png" onclick="changeFlavor('kiwi')">
+
+<img src="images/strawberry-slice.png" onclick="changeFlavor('strawberry')">
+
+<img src="images/orange-slice.png" onclick="changeFlavor('orange')">
+
+<img src="images/berry-slice.png" onclick="changeFlavor('berry')">
+
+</div>
+
+</div>
+
+
+<div class="right">
+
+<div class="circle"></div>
+<div class="liquid"></div>
+<img src="images/kiwi-big.PNG" id="bottle" class="main-bottle">
+
+</div>
+
 </div>
 
 <script src="script.js"></script>
+
 </body>
 </html>
